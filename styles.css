@@ -1,15 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-size: 18px;
+  font-family: "Bai Jamjuree";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: hsl(210, 10%, 33%);
+}
+
+p {
+  color: hsla(212, 10%, 33%, 0.496);
+  font-size: 14px;
 }
 
 .hero-buttons {
   display: flex;
   width: 380px;
   margin: auto;
-  /* border: 1px solid red; */
   justify-content: space-between;
   margin-top: 20px;
 }
@@ -27,32 +43,32 @@
 .section-one {
   padding: 40px;
   text-align: center;
-  border: 1px solid blue;
   background-image: url("images/bg-header-desktop.png");
   background-repeat: no-repeat;
 }
 
 .section-one .hero {
-  /* border: 1px solid green; */
-  width: 50%;
+  width: 64%;
   margin: 60px auto;
-  padding: 20px;
 }
 
 .section-one .hero h1 {
   font-size: 2rem;
   margin-bottom: 20px;
 }
+.section-one .hero p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
 
 .section-one .hero2 {
-  border: 1px solid green;
-  width: 50%;
-  margin: auto;
+  width: 64%;
+  margin: 140px auto 50px auto;
   padding: 20px;
 }
 
 .section-one .hero2 h3 {
-  font-size: 2rem;
+  font-size: 1.7rem;
   margin-bottom: 20px;
 }
 
@@ -67,6 +83,7 @@ button {
   display: flex;
   align-items: center;
   margin-bottom: 100px;
+  gap: 60px;
 }
 
 .section-two .mid {
@@ -74,7 +91,9 @@ button {
 }
 
 .section-two .mid img {
-  width: 90%;
+  width: 100%;
+  position: relative;
+  left: -30px;
 }
 
 .section-two .text {
@@ -82,21 +101,24 @@ button {
 }
 
 .section-two .text div {
-  width: 50%;
-  margin-bottom: 25px;
+  width: 65%;
+  margin-bottom: 40px;
+}
+
+.section-two .text div p {
+  font-size: 14px;
+  line-height: 25px;
 }
 
 .section-three {
   text-align: center;
   padding: 40px;
-  /* border: 1px solid red; */
 }
 
 .section-three h2 {
   font-size: 1.6rem;
   text-align: center;
   margin-bottom: 25px;
-  /* border: 1px solid red; */
 }
 
 .section-three p {
@@ -108,14 +130,12 @@ button {
 
 .section-four {
   text-align: center;
-  border: 1px solid red;
 }
 
 .section-four h3 {
   text-align: center;
   font-size: 1.6rem;
   margin-bottom: 25px;
-  border: 1px solid red;
 }
 
 .section-four p {
@@ -129,53 +149,62 @@ button {
   text-align: center;
   display: flex;
   gap: 20px;
-  border: 1px solid red;
+
   margin: auto;
   width: fit-content;
 }
 
 .section-four .mid div {
   text-align: center;
-  width: 380px;
-  border: 1px solid red;
+  width: 350px;
 }
 
-.section-four .mid div h2{
+.section-four .mid div h2 {
   text-align: center;
   margin: 25px 0;
-  border: 1px solid red;
 }
 
-.section-four .mid div p{
+.section-four .mid div p {
   text-align: center;
   width: 355px;
-  border: 1px solid red;
 }
 
 .section-four .logos {
   width: fit-content;
-  gap: 100px;
+  gap: 70px;
   text-align: center;
   display: flex;
-  border: 1px solid red;
   align-items: center;
   justify-content: space-between;
   margin: 100px auto;
 }
 
-
 .section-four .CTA {
-  
+  margin-bottom: 120px;
 }
 
-.section-four .CTA h2{
+.section-four .CTA h2 {
   font-size: 1.6rem;
   margin-bottom: 25px;
 }
 
-.footer{
-  background-color: hsl(201, 11%, 66%);
+.footer {
+  background-color: hsl(200, 12%, 90%);
   color: hsl(210, 10%, 33%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 80px;
+}
+
+.footer li {
+  list-style: none;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.footer img {
+  width: 3rem;
 }
 .attribution {
   font-size: 11px;
